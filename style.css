@@ -25,9 +25,13 @@ u{
 }
 p{
     font-size: 22px;
-    color: white;
+    color: #fff;
 }
 
+a{
+    text-decoration: none;
+    color: #fff;
+}
 .container{
     width: 450px;
     margin: 10px auto;
@@ -155,7 +159,7 @@ footer{
         margin: 2 auto 15 auto;
     }
     .input{
-        width:200px;
+        width:100%;
     }
     h1{
         font-size: 28px;
