@@ -94,6 +94,14 @@ input:focus, input:active{
     color: #fff;
 }
 
+footer{
+    font-size: 18px;
+    position: fixed;
+    bottom: 5px;
+    right: 5px;
+    color: #fff;
+}
+
 #dialogOverlay{
     display: none;
     opacity: .8;
@@ -137,18 +145,8 @@ input:focus, input:active{
     color: var(--ghost);
 }
 
-@media screen and (max-width:959px){
-    .container{
-        width:100%;
-    }
-    h1{
-        font-size: 30px;
-    }
-    p{
-        font-size: 18px;
-    }
-}
-@media screen and (max-width:700px){
+
+@media screen and (max-width:449px){
     .container{
         width:100%;
     }
