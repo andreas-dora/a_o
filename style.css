@@ -12,7 +12,7 @@
 }
 body{ 
     font-family: 'Roboto', sans-serif;
-    background-color:var(--abox);
+    background-color:var(--backG);
 }
 h1{
     font-size: 48px;
@@ -20,9 +20,8 @@ h1{
 }
 
 #main_content{
-    width: 450px;
+    width: 320px;
     margin: 0 auto;
-    padding: 100px 0 0;
 }
 .myFrame{
     width: 100%;
