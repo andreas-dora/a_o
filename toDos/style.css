@@ -1,7 +1,9 @@
 *{margin: 0; padding: 0; box-sizing: border-box;
 }
+html {scroll-behavior: smooth;}
 :root{
   --extr:firebrick;
+  --back: ghostwhite;
 }
 h1,h2,h3,h4,h5{
   text-transform: uppercase;
@@ -16,7 +18,7 @@ h4{
 body{
   font-family: 'Roboto', sans-serif;
   font-size: 20px;
-  background-color: whitesmoke;
+  background-color: var(--back);
 }
 main{
   width: 96%;
@@ -50,7 +52,8 @@ article{
 }
 
 aside{
-  background-color: ghostwhite;
+  position: relative;
+  background-color: var(--back);
   min-width: 310px;
   padding: 15px;
   flex: 1;
@@ -72,4 +75,15 @@ strong, article h4{
 
 li{
   margin-left: 20px;
+}
+
+.upBtn{
+  position: fixed;
+  right: 15px;
+  bottom: 5px;
+  width: 70px;
+  height: 50px;
+  font-size: 36px;
+  font-weight: bold;
+  background-color: var(--back);
 }
