@@ -2,7 +2,8 @@
 }
 html {scroll-behavior: smooth;}
 :root{
-  --extr: rgb(1, 143, 94);
+  --extr: #9b1b30; /* chillipepper 2019*/
+  --bikini: #77212e; /*BikiniRed 2019 */
   --back: ghostwhite;
 }
 h3,h4,h5{
@@ -97,7 +98,6 @@ li{
 }
 .downBtn:hover{
   box-shadow: 2px 3px  10px 0 silver;
-
 }
 
 .upBtn{
