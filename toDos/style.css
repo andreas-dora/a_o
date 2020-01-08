@@ -2,10 +2,10 @@
 }
 html {scroll-behavior: smooth;}
 :root{
-  --extr:firebrick;
+  --extr: rgb(1, 143, 94);
   --back: ghostwhite;
 }
-h1,h2,h3,h4,h5{
+h3,h4,h5{
   text-transform: uppercase;
   font-family: 'Roboto Mono', monospace;
 }
@@ -25,8 +25,8 @@ main{
   margin: 0 auto;
 }
 header h1{
-  font-size: 76px;
-  color: firebrick;
+  font-size: 56px;
+  color: var(--extr);
 }
 hr{
   display: none;
@@ -41,6 +41,7 @@ header{
   margin: 20px auto;
   padding: 10px 0;
   display: flex;
+  flex-wrap: wrap;
   box-shadow: 3px 5px  12px 0 silver;
 }
 article{
@@ -84,6 +85,19 @@ color: var(--extr);
 
 li{
   margin-left: 20px;
+}
+.downBtn{
+  width: 100%;
+  height: 40px;
+  margin-bottom: 15px;
+  background-color: var(--back);
+  font-size: 16px;
+  font-weight: bold;
+  outline: none;
+}
+.downBtn:hover{
+  box-shadow: 2px 3px  10px 0 silver;
+
 }
 
 .upBtn{
