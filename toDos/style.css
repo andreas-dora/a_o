@@ -1,0 +1,75 @@
+*{margin: 0; padding: 0; box-sizing: border-box;
+}
+:root{
+  --extr:firebrick;
+}
+h1,h2,h3,h4,h5{
+  text-transform: uppercase;
+  font-family: 'Roboto Mono', monospace;
+}
+h2{
+  margin-bottom: 20px;
+}
+h4{
+  margin-bottom: 10px;
+}
+body{
+  font-family: 'Roboto', sans-serif;
+  font-size: 20px;
+  background-color: whitesmoke;
+}
+main{
+  width: 96%;
+  margin: 0 auto;
+}
+header h1{
+  font-size: 76px;
+  color: firebrick;
+}
+hr{
+  display: none;
+}
+
+header{
+  margin: 10px;
+  height: 100px;
+}
+
+.chapter{
+  margin: 20px auto;
+  padding: 10px 0;
+  display: flex;
+  box-shadow: 3px 5px  12px 0 silver;
+}
+article{
+  min-width: 310px;
+  background-color: whitesmoke;
+  padding: 15px;
+  line-height: 1.5em;
+  flex: 2;
+}
+
+aside{
+  background-color: ghostwhite;
+  min-width: 310px;
+  padding: 15px;
+  flex: 1;
+}
+
+strong, article h4{
+  color: var(--extr);
+}
+.mono{
+  font-family: 'Roboto Mono', monospace;
+  font-size: 18px;
+  padding: 10px;
+  background-color: lightgoldenrodyellow;
+  border: 1px solid black;
+}
+.mono li{
+  font-size: 16px;
+}
+
+li{
+  margin-left: 20px;
+}
