@@ -41,9 +41,11 @@
 
 <div class="chapter" id="aware">
 	<article>
-		<h2>1. Videoüberwachung</h2>
-	
-	<p><strong>Alle Bars, der Eingangsbereich sowie das CVD-Büro werden Videoüberwacht.</strong></p>
+		<h2>Awareness und Sicherheit</h2>
+		<p>Hier fehlt ein kleiner Text.</p>
+	<h4>Videoüberwachung
+	</h4>
+	<p>Alle Bars, der Eingangsbereich sowie das CVD-Büro werden <strong>Videoüberwacht</strong>.</p>
 	</article>
 	<aside>
 		<a href="#top"><button class="upBtn">Up</button></a>
@@ -81,12 +83,18 @@
 	</article>
 	<aside>
 		<figure>
-			<img src="./img/Getränkekarte_h.png" alt="Getränkekarte">
+			<img class="sideImg" id="sDrinks" src="./img/Getränkekarte_h.png" alt="Getränkekarte">
 		</figure>
 		<a href="#top"><button class="upBtn">Up</button></a>
 
 	</aside>
 	
+</div>
+
+<div id="myGkModal" class="modal">  
+	<span class="close">&times;</span>
+	<img class="modal-content" id="GKgr" src="./img/GKarte_q.png">
+	<div id="caption">Hmmm lecker Bierchen, blah blah</div>
 </div>
 
 <hr />
@@ -126,6 +134,15 @@ Ihr könnt davon soviel trinken, wie ihr wollt. Ihr müsst aber Arbeitsfähig bl
 Mitarbeiter-Getränke werden auf der <strong>Lauliste nicht eingetragen</strong>. </p>
 		</article>
 		<aside>
+			<figure>
+				<img class="sideImg" id="lau" src="./img/Lauliste.png" alt="Lauliste">
+			</figure>
+
+			<div id="lauModal" class="modal">  
+				<span class="close">&times;</span>
+				<img class="modal-content" id="lauGr" src="./img/Lauliste.png" alt="Lauliste Große">
+				<div id="lauCaption">Hmmm lecker Bierchen, blah blah</div>
+			</div>
 			<a href="#top"><button class="upBtn">Up</button></a>
 
 		</aside>
@@ -233,5 +250,6 @@ Stationen aufbauen, also:
 <hr />
 	</main>
 
+	<script type="text/javascript" src="sketch.js"></script>
 </body>
 </html>
