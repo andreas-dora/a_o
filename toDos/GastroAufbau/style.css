@@ -25,10 +25,12 @@ header a{
   float: right;
   padding: 15px 20px; 
    color: ghostwhite;
-}
+   border: 1px solid var(--back);}
+
+
 header a:hover{
-  background-color: silver;
-}
+border: 1px solid ghostwhite;}
+
 header .container{
   display: flex;
   padding: 10px 0;
