@@ -5,21 +5,27 @@
 }   
 :root{
     --main:snow;
-    --backG:#2d7086;
+    --backG: #77212e;
+    --oldbackG:#2d7086;
     --secC:silver;
     --hiLiteC:#19404d;
     --abox:#cc0000;
 }
 body{ 
-    font-family: 'Roboto', sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
+    /* font-family: 'Roboto', sans-serif; */
     background-color:var(--backG);
     color: var(--main);
     font-size: 20px;
     line-height: 1.4em;;
 }
 
+header{
+    width:96%;
+    margin: 40px auto;
+}
 main{
-    width: 90%;
+    width: 96%;
     margin: 20px auto;
     display: flex;
 }
@@ -38,15 +44,17 @@ article{
     padding: 15px;
     flex: 1;
   }
-p, li{
+li{
     font-size: 22px;
+    line-height: 1.5em;
 }
 a{
     text-decoration: none;
     color: #fff;
 }
 li{list-style: none;}
-
+fieldset{color: var(--main); border-color: var(--main);}
+legend{ padding: 5px; font-size: 14px; font-weight: bold; text-transform: uppercase;}
 footer{
     font-size: 18px;
     position: fixed;
