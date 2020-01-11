@@ -60,6 +60,7 @@ h4{
 }
 
 main{
+  position: relative;
   width: 96%;
   margin: 0 auto;
 }
@@ -119,11 +120,11 @@ strong, article h4{
 a{
   text-decoration: none;
   font-weight: bold;
- color: black; 
+ color: ghostwhite; 
 }
 
 a:hover{
-color: var(--extr);
+color: silver;
 }
 
 li{
@@ -147,7 +148,7 @@ li{
 }
 
 .upBtn{
-  position: absolute;
+  position: fixed;
   right: 0px;
   bottom: 5px;
   width: 70px;
