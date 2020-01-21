@@ -70,6 +70,7 @@ strong{ color: var(--special);}
   border: none;
   outline: none;
 } */
+
 .sideImg{
   width: 100%;
   margin-bottom: 10px;
@@ -141,7 +142,7 @@ strong{ color: var(--special);}
   border: 1px solid var(--main);
 }
 /*----------------------TABLE--------------*/
-.tableGrid{
+/* .tableGrid{
   display: grid;
   grid-template-columns: auto;
   grid-gap: 20px 20px;
@@ -151,24 +152,42 @@ strong{ color: var(--special);}
   background-color: dimgray;
 margin-bottom: 25px;
 }
-table{
-  max-width: 280px;
-  /* margin: 0  auto; */
-  border: 1px solid white;
 
-}
 
-/* td{padding:2px} */
-tr{
-  border: 1px solid white;
-}
-td{
-  /* min-width:40px; */
-}
 .right{
   padding-left: 10px;
   float: right;
+} */
+/*--------------------INfo Grid und Table -----------------------*/
+table{ width:100%;border: 1px solid var(--main);margin-bottom: 10px;}
+td{padding: 7px 0 3px 6px;border-top: 1px solid var(--main);}
+th{padding: 6px 4px; text-transform: uppercase;}
+
+.infoGrid{
+  width: 100%;
+  margin: 0 auto 0 auto;
+  display: grid;
+  background-color: var(--backG);
+  grid-column-gap: 1rem;  grid-template-columns: auto auto 27%;
+  grid-template-rows: 50px auto;
+  grid-template-areas: 
+  "box1 box1 box3"
+  "box2 box2 box3"
 }
+.infoGrid .infoBox{
+  background-color: var(--backG);
+}
+.infoGrid .infoHead{grid-area: box1; padding: 20px 20px 0 20px;
+  border-left: 1px solid var(--main);
+  border-top: 1px solid var(--main);
+  border-right: 1px solid var(--main);
+}
+.infoGrid .infoMain{grid-area: box2; padding: 20px;
+  border-left: 1px solid var(--main);
+  border-right: 1px solid var(--main);
+  border-bottom: 1px solid var(--main);
+}
+.infoGrid .infoAside{grid-area: box3;}
 
 
 /*--------------------------------------------------------------*/
