@@ -9,7 +9,7 @@ body{
 h1, h2{
   margin-bottom: 20px;
 }
-#id_gridHead{font-size: 72px;}
+.gridHead{font-size: 72px;}
 h3{
   margin-bottom: 18px;
 
@@ -70,10 +70,11 @@ a:hover{color: white}
   box-shadow: 0 0.1rem 0.3rem rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
 }
 button{
-  width: 100%;
+  /* width: 100%; */
 
   height: 36px;
   /* margin-top: 10px; */
+  margin-bottom: 20px;
   background-color: var(--special);
   font-size: 14px;
   font-weight: bold;
@@ -85,18 +86,29 @@ button{
   box-shadow: 0 0.1rem 0.3rem rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
   outline: none;
 }
-button:hover{
+button:hover,  figure img:hover{
   cursor: pointer;
   z-index: 1;
   box-shadow: 0 1.5rem 2.8rem rgba(0, 0, 0, 0.65), 0 1rem 1rem rgba(0, 0, 0, 0.24);
 }
 .smallBtn{
-    width: 200px;
+  width: 200px;
 }
-
+figure{
+  display: inline-block;
+  margin-right: 20px;
+}
+figure img{
+  margin-bottom: 16px;
+}
+figure .figHBtn{
+  width: 141px; height: 26px; font-size: 12px;}
+figure .figQBtn{
+  width: 283px; height: 26px; font-size: 12px;}  
+  
 /*-------- The Grid ---------------------*/
 .gridContainer{
-  max-width:1000px;
+  width: 98%;
   /* min-height: 20vw; */
   margin: 20px auto 20px auto;
   position: relative;
@@ -108,46 +120,34 @@ button:hover{
   grid-template-columns: 12.5% auto 12.5% auto 12.5% auto 12.5% auto; 
   grid-gap: 1rem;
   grid-template-areas: 
-  "box1 box1 box1 box1 box1 box1 box1 box1"
-  "box1 box1 box1 box1 box1 box1 box1 box1"
-
-  "box2 box2 box2 box2 box2 box2 box2 box2"
-  
-  "box4 box4 box4 box5 box5 box5 box3 box3"
-  "box4 box4 box4 box5 box5 box5 box3 box3"
-  "box4 box4 box4 box5 box5 box5 box6 box6"
-  "box4 box4 box4 box5 box5 box5 box6 box6"
-
-  "box7 box7 box7 box7 box7 box7 box7 box7"
+  "box1 box1 box1 box1 box1 box1 box1 box2"
+  "box1 box1 box1 box1 box1 box1 box1 box2"
+  "box3 box3 box3 box3 box3 box3 box3 box3"
+  "box4 box4 box4 box4 box4 box4 box4 box4"
+  "box7 box7 box7 box7 box7 box7 box7 box7" 
 }
 
 .gridContainer .grid-box{
-  /* min-height: 30px; */
   background-color: var(--backG);
   padding:10px 20px;
-  /* box-shadow: 0 0.1rem 0.3rem rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24); */
-  /* transition: all 450ms;
-  animation: fadeIn 0.25s ease-out normal backwards; */
 }
-/* .gridContainer .grid-box:hover{
-  box-shadow: 0 1.5rem 2.8rem rgba(0, 0, 0, 0.65), 0 1rem 1rem rgba(0, 0, 0, 0.24);
-} */
+
 
 .gridContainer .gHeader{grid-area: box1;}
 .gridContainer .gNav{grid-area: box2;}
-.gridContainer .gInfo{grid-area: box3;}
-.gridContainer .gLeft{grid-area: box4;}
-.gridContainer .gMain{grid-area: box5;
+/* .gridContainer .gInfo{grid-area: box3;}
+.gridContainer .gLeft{grid-area: box4;} */
+.gridContainer .gMain{grid-area: box3;
 }
-.gridContainer .gMain .columns3{
+/* .gridContainer .gMain .columns3{
   column-count: 3;
   column-rule: 5px solid var(--special);
   column-gap: 50px;
-}
-.gridContainer .gLogin{grid-area: box4;}
+} */
+/* .gridContainer .gLogin{grid-area: box4;}
 .gridContainer .gDates{grid-area: box6;}
 .gridContainer .gDates .dates{width: 100%;
-}
+} */
 
 .gridContainer .gFooter{grid-area: box7;
   font-size: 16px; 
@@ -165,13 +165,13 @@ bottom: 0; */
 /*------------------- KEYFRAMES ---------*/
 @media only screen and (max-width: 1200px){
   .gridContainer{
-    width: 94%;
+    /* width: 94%; */
     font-size: 110%;
   }
 }
 @media only screen and (max-width: 1000px){
   .gridContainer{
-    width: 95%;
+    /* width: 95%; */
     font-size: 100%;
   }
   /* .gridContainer .gMain .columns3{
@@ -180,7 +180,7 @@ bottom: 0; */
   }    */
 } 
 @media only screen and (max-width: 900px){
-  #id_gridHead{font-size: 66px;}
+  .gridHead{font-size: 66px;}
   .gridContainer{
     width: 96%;
     font-size: 100%;
@@ -193,9 +193,9 @@ bottom: 0; */
 
 }
 @media only screen and (max-width: 700px){
-  #id_gridHead{font-size: 50px;}
+  .gridHead{font-size: 50px;}
 
-  .gridContainer{
+  /* .gridContainer{
     grid-template-areas: 
     "box1 box1 box1 box1 box1 box1 box1 box1"
     "box1 box1 box1 box1 box1 box1 box1 box1"
@@ -210,31 +210,16 @@ bottom: 0; */
 
     "box7 box7 box7 box7 box7 box7 box7 box7"
 
-  }
+  } */
 }
 @media only screen and (max-width: 600px){
   .navi a{
     margin-bottom: 18px;
   }
-  #id_gridHead{font-size: 42px;}
+  .gridHead{font-size: 42px;}
 
-  .gridContainer{
-    grid-template-areas: 
-    "box1 box1 box1 box1 box1 box1 box1 box1"
-    "box1 box1 box1 box1 box1 box1 box1 box1"
-    
-    "box2 box2 box2 box2 box2 box2 box2 box2"
-    "box3 box3 box3 box3 box3 box3 box3 box3"
-
-    "box6 box6 box6 box6 box6 box6 box6 box6"
-
-    "box4 box4 box4 box4 box4 box4 box4 box4"
-    "box5 box5 box5 box5 box5 box5 box5 box5"
-
-    "box7 box7 box7 box7 box7 box7 box7 box7"
-
-  }
+  
 }
 @media only screen and (max-width: 500px){
-    #id_gridHead{font-size: 36px;}
+    .gridHead{font-size: 36px;}
 }
