@@ -14,17 +14,29 @@
 	<title>Aufbau Gastro</title>
 </head>
 <body>
-  <header id="top">
-    <h1><span class="light">Aufbau</span> Gastro</h1>
-  </header>
+
+
+
 
   <main>
+    <div class="gHeader grid-box" id="id_top">
+      <span class="gridHead">
+        <span class="bold">Aufbau </span><span class="light">Gastro</span>
+      </span>
+    </div>
+<!-- Nav------------------------------------------------------- -->
+    <div id="id_navbar">
+      <a class="right" href="#home">Home</a>
+      <a href="#news">News</a>
+      <a class="left" href="#id_top">Up</a>
+    </div>
+<!-- Nav------------------------------------------------------- -->
 
-    <div class="nav" id="bNav">
+    <!-- <div class="nav" id="bNav">
       <a href="../index.html">Home</a>
       <a href="#">News</a>
       <a href="#top">top</a>
-    </div>
+    </div> -->
   <!-- <nav id="bNav">
     <a href="../index.html">Home</a>
     <a href="#">News</a>
@@ -171,14 +183,151 @@
       </div>
       <div class="side-item"></div>
 
-      <div class="infoGrid">
+      <div class="main-item" id="id_scroll07"> 
+				<h2>Club Bar</h2>
+        
+        <div class="ware">
+          <h5>WARE: CLUB BAR</h5>
+          <div class="display">
+        <!-- Tab content -->
+        <div id="id_Club_Bier" class="tabcontent">
+          <div class="table-Item">
+            <table>
+              <th>Bier, Äppler</th><th>Kisten</th>
+              <tr><td class="td_0">Becks</td><td class="td_1">9</td></tr>
+              <tr><td class="td_0">Corona</td><td class="td_1">6</td></tr>
+          
+              <tr><td class="td_0">Radler</td><td class="td_1">4</td></tr>
+              <tr><td class="td_0">Äpler</td><td class="td_1">4</td></tr>
+              <tr><td class="td_0">Prosecco</td><td class="td_1">1</td></tr>
+            </table>
+          </div>
+        </div>
+        
+        <div id="id_Club_Soft" class="tabcontent">
+          
+          
+          <div class="table-item">
+            <table>
+              <th>Soft</th><th>Kisten</th>
+              <tr><td class="td_0">Hassia mit</td><td class="td_1">6</td></tr>
+              <tr><td class="td_0">Hassia o.</td><td class="td_1">6</td></tr>
+              <tr><td class="td_0">Mate</td><td class="td_1">4</td></tr>
+              <tr><td class="td_0">Afri</td><td class="td_1">3</td></tr>
+              <tr><td class="td_0">Bluna</td><td class="td_1">1</td></tr>
+              <tr><td class="td_0">Dose Classic</td><td class="td_1">1</td></tr>
+              <tr><td class="td_0">Dose Acai</td><td class="td_1">1</td></tr>
+            </table>
+          </div>
+        </div>
+        <div id="id_Club_Filler" class="tabcontent">
+      
+          <div class="table-item">
+            <table>
+              <th>Filler</th><th>Flaschen</th>
+              <tr><td class="td_0">Maracuja</td><td class="td_1">6</td></tr>
+              <tr><td class="td_0">Wasser gr.</td><td class="td_1">6</td></tr>
+              <tr><td class="td_0">Tonic Water</td><td class="td_1" >12</td ></tr>
+              <tr><td class="td_0">Spicy Ginger</td><td class="td_1">6</td></tr>
+              <tr><td class="td_0">Bitter Lemon</td><td class="td_1">6</td></tr>
+              <tr><td class="td_0">Cola gr.</td><td class="td_1">6</td></tr>
+            </table>
+          </div>
+        </div>
+        <div id="id_Club_Schnaps" class="tabcontent">
+          <div class="table-item">
+            <table>
+              <th>Schnaps</th><th>Flaschen</th>
+              <tr><td class="td_0">Vodka</td><td class="td_1">12</td></tr>
+              <tr><td class="td_0">Jägerm.</td><td class="td_1">6</td></tr>
+              <tr><td class="td_0">Berliner L.</td><td class="td_1">12</td></tr>
+              <tr><td class="td_0">Gin</td><td class="td_1">9</td ></tr>
+              <tr><td class="td_0">Jack D</td><td class="td_1">1</td></tr>
+              <tr><td class="td_0">Rum</td><td class="td_1">1</td></tr>
+            </table>
+          </div>
+        </div>
+      
+      
+      
+          </div>
+          
+          <div class="tab">
+            <button class="tablinks" onclick="openCity(event, 'id_Club_Bier')" id="defaultOpen">Bier</button>
+            <button class="tablinks" onclick="openCity(event, 'id_Club_Soft')">Soft</button>
+            <button class="tablinks" onclick="openCity(event, 'id_Club_Filler')">Filler</button>
+            <button class="tablinks" onclick="openCity(event, 'id_Club_Schnaps')">Schnaps</button>
+          </div>
+          <br>
+          <br>
+        </div>
+        
+<!-- ----------------------- Club Kühlschränke      --------------------->
+<div class="fourGrid">
+  <div class="head"><h4>A</h4></div>
+  <div class="head"><h4>B</h4></div>
+  <div class="head"><h4>C</h4></div>
+  <div class="head"><h4>D</h4></div>
+
+  <div class="item">Becks</div>
+  <div class="item">Schnaps</div>
+  <div class="item">Schnaps</div>
+  <div class="item">Becks</div>
+  <div class="item">Corona</div>
+  <div class="item">Wasser mit</div>
+  <div class="item">Wasser mit</div>
+  <div class="item">Corona</div>
+  <div class="item">Radler / <br> Äppler</div>
+  <div class="item">Wasser <br> ohne</div>
+  <div class="item">Wasser o</div>
+  <div class="item">Radler / <br> Äpler</div>
+  <div class="item">SchwDose / <br> Prosecco</div>
+  <div class="item">Cola 75% / <br> Bluna</div>
+  <div class="item">Cola 75% / <br> Bluna</div>
+  <div class="item">Mitarbeiter</div>
+  <div class="item">Filler</div>
+  <div class="item">Filler</div>
+  <div class="item">Filler</div>
+  <div class="item">Mitarbeiter</div>
+</div>
+<br>
+<h2>Club Schubladen</h2>
+<div class="fourGrid">
+  <div class="item">Becks</div>
+  <div class="item">Wasser mit</div>
+  <div class="item">Wasser mit</div>
+  <div class="item">Becks</div>
+  <div class="item">Mate</div>
+  <div class="item">Wasser o</div>
+  <div class="item">Wasser o</div>
+  <div class="item">Mate</div>
+</div>
+
+        
+      
+      </div>
+      
+      <div class="side-item">
+        <figure>
+					<img class="sideImg" id="id_img0" src="../img/verteilung.png" alt="Hmmm, lecker Bierchen...">
+				</figure>
+				
+ 
+        <a href="../documents/GetränkeVerteilung_2020.pdf" download><button class="dBtn">Download Pdf</button></a>
+      </div>
+
+    
+<!-- ----------------------- Club Kühlschränke      --------------------->
+
+      <!-- <div class="infoGrid">
         <div class="infoHead infoBox">
           <h2>Club Bar</h2>
         </div>
         <div class="infoMain infoBox">
           Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consectetur libero pariatur ut, ullam consequatur sequi architecto aperiam maxime minima? Non corporis pariatur, nisi eligendi excepturi in odio quas cumque culpa.
         </div>
-        <div class="infoAside infoBox">
+      </div> -->
+        <!-- <div class="infoAside infoBox">
           <div class="head">
             <h5>Ware:</h5>
           </div>
@@ -231,14 +380,13 @@
             </table>
           </div>
          
-        </div>
-        </div>
-        
+        </div> -->
+
+<!--   ------------------------- Da ist ----------------------------------      -->
+<!--          
       <div class="main-item" id="id_scroll07">
         <h2>Club</h2>
-<!--         
-       
-         -->
+
         <br>
         <div class="fourGrid">
           <div class="head"><h4>A</h4></div>
@@ -280,9 +428,9 @@
           <div class="item">Mate</div>
         </div>
 
-      </div>
+      </div> -->
 
-      <div class="side-item">
+      <!-- <div class="side-item">
        
            
         <div class="tableGrid">
@@ -335,9 +483,9 @@
 
 
         
-      </div>
+      </div> -->
 
-
+<!-- 
       <div class="main-item" id="id_scroll08">
         <h2>Kirche Kühlschränke </h2>
         <div class="fourGrid">
@@ -493,7 +641,7 @@
         </div>
       </div>
 
-<br>
+<br> -->
 
     
   </main>
@@ -502,9 +650,9 @@
   
   </footer>
   <br>
-  <a href="#top"><button class="upBtn"><i class="fas fa-caret-up fa-lg"></i></button></a>
+  <!-- <a href="#top"><button class="upBtn"><i class="fas fa-caret-up fa-lg"></i></button></a>
     </main>
-  
+   -->
   
   <div id="id_modal0" class="modal">  
     <span class="close">&times;</span>
