@@ -107,29 +107,29 @@ button:hover{
   margin: 20px auto 20px auto;
   position: relative;
   display: grid;
-  grid-template-columns: 12.5% auto 12.5% auto 12.5% auto 12.5% auto; 
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr; 
   grid-gap: 1rem;
   grid-template-areas: 
   "box1 box1 box1 box1 box1 box1 box1 box1"
   "box2 box2 box2 box2 box2 box2 box2 box2"
   "box3 box3 box3 box3 box3 box3 box4 box4"
-  "box5 box5 box5 box5 box5 box5 box6 box6"
-  "box7 box7 box7 box7 box7 box7 box8 box8"
+  "box5 box5 box5 box5 box5 box6 box6 box6"
+  "box7 box7 box7 box7 box7 box8 box8 box8"
   "box9 box9 box9 box9 box9 box9 box10 box10"
   "box11 box11 box11 box11 box11 box11 box11 box11"
-  "box13 box13 box13 box13 box13 box13 box12 box12"
+  "box13 box13 box13 box13 box13 box12 box12 box12"
   
   "box14 box14 box14 box14 box14 box14 box14 box14"
-  "box16 box16 box16 box16 box16 box16 box15 box15"
+  "box16 box16 box16 box16 box16 box15 box15 box15"
 
   "box17 box17 box17 box17 box17 box17 box17 box17"
-  "box19 box19 box19 box19 box19 box19 box18 box18"
+  "box19 box19 box19 box19 box19 box18 box18 box18"
 
   "box20 box20 box20 box20 box20 box20 box20 box20"
-  "box22 box22 box22 box22 box22 box22 box21 box21"
+  "box22 box22 box22 box22 box22 box21 box21 box21"
 
   "box23 box23 box23 box23 box23 box23 box23 box23"
-  "box25 box25 box25 box25 box25 box25 box24 box24"
+  "box25 box25 box25 box25 box25 box24 box24 box24"
   "box26 box26 box26 box26 box26 box26 box26 box26"
 }
 
@@ -175,7 +175,9 @@ button:hover{
 .gridContainer .gChapterEight{grid-area: box25;} */
 .gridContainer .gFooter{grid-area: box23; font-size: 16px; text-align: right;} 
 
- 
+ /* figure{max-width: 100px;} */
+ img{max-width: 320px;
+width: 100%;}
  /*---------------- Kühlschränke und Ware ----------------*/
  .fourGrid{
   width: 96%;
@@ -310,6 +312,13 @@ th{text-transform: uppercase;font-weight: lighter;
 @media only screen and (max-width: 600px){
   .gridContainer{
     width:98%;
+    margin: 20px auto 20px auto;
+    position: relative;
+    grid-template-columns: 1fr; 
+    column-gap: 0;
+    row-gap: 1em;
+
+ 
   }
   .gridContainer .grid-box{padding: 10px 2px;}
   .navi a{ margin-bottom: 18px;}
