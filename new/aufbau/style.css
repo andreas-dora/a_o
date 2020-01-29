@@ -141,11 +141,12 @@ button:hover{
 .gridContainer .chapterHead{border-top: 2px solid var(--main);}
 .gridContainer .gHeader{grid-area: box1;}
 .gridContainer .gNav{grid-area: box2;padding: 0 20px 0 20px ;}
-.gridContainer .gNav .flexContainer{display: flex; }
-.gridContainer .gNav .flexContainer div{background-color: var(--special); text-transform: uppercase; 
-  padding: 10px 30px; 
+.gridContainer .gNav .flexContainer{display: flex; justify-content: space-between; background-color: var(--special);}
+.gridContainer .gNav .flexContainer div{background-color:var(--special); 
+  text-transform: uppercase; 
+  padding: 10px 30px; border: 1px solid var(--special); 
 }
-
+.gridContainer .gNav .flexContainer div:hover{background-color:var(--backG); border: 1px solid var(--special); }
 
 .gridContainer .gInhalt{grid-area: box3;}
 .gridContainer .gInhalt .flexContainer{display: flex; flex-wrap: wrap;}
