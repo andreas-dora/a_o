@@ -308,6 +308,10 @@ th{text-transform: uppercase;font-weight: lighter;
   #id_gridHead{font-size: 50px;}
 }
 @media only screen and (max-width: 600px){
+  .gridContainer{
+    width:98%;
+  }
+  .gridContainer .grid-box{padding: 10px 2px;}
   .navi a{ margin-bottom: 18px;}
   #id_gridHead{font-size: 42px;}
 }
