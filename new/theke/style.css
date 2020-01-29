@@ -301,6 +301,7 @@ th{text-transform: uppercase;font-weight: lighter;
 
 @media only screen and (max-width: 900px){
   #id_gridHead{font-size: 66px;}
+  .sticky {width: 98%;}
   .gridContainer{
     width: 96%;
     font-size: 100%;
