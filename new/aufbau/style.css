@@ -136,7 +136,7 @@ button:hover{
 .gridContainer .grid-box{
   background-color: var(--backG);
   padding: 20px;
-  box-shadow: 0 0.1rem 0.3rem rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  /* box-shadow: 0 0.1rem 0.3rem rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24); */
 }
 .gridContainer .chapterHead{border-top: 2px solid var(--main);}
 .gridContainer .gHeader{grid-area: box1;}
@@ -175,8 +175,8 @@ button:hover{
 .gridContainer .gChapterEight{grid-area: box25;} */
 .gridContainer .gFooter{grid-area: box23; font-size: 16px; text-align: right;} 
 
- /* figure{max-width: 100px;} */
- img{max-width: 320px;
+ figure{margin: 9 auto;}
+ img{max-width: 320px; margin: 0 auto;
 width: 100%;}
  /*---------------- Kühlschränke und Ware ----------------*/
  .fourGrid{
@@ -336,23 +336,26 @@ th{text-transform: uppercase;font-weight: lighter;
     grid-column-gap: 4px;
     grid-template-columns: 1fr 1fr 1fr 1fr;
   }
+  .fourGrid .item{padding: 8px 3px; font-size: 16px;}
+.fourGrid .head{border: 1px solid white;text-align: center;}
 }
 @media only screen and (max-width: 700px){
   #id_gridHead{font-size: 50px;}
 }
 @media only screen and (max-width: 600px){
   .gridContainer{
-    width:98%;
+    width: 98%;
     margin: 20px auto 20px auto;
     position: relative;
     /* grid-template-columns: 1fr;  */
     column-gap: 0;
     row-gap: 1em;
-
- 
   }
   .gridContainer .grid-box{padding: 10px 2px;}
   .navi a{ margin-bottom: 18px;}
   #id_gridHead{font-size: 42px;}
+  .fourGrid{
+    width: 98%;}
+  .fourGrid .item{padding: 8px 3px; font-size: 16px;}
 }
 
