@@ -346,11 +346,13 @@ th{text-transform: uppercase;font-weight: lighter;
   #id_gridHead{font-size: 50px;}
 }
 @media only screen and (max-width: 600px){
+  p{font-size: 14px;}
+  .sticky {width: 98%;}
+
   .gridContainer{
     width: 98%;
     margin: 20px auto 20px auto;
     position: relative;
-    /* grid-template-columns: 1fr;  */
     column-gap: 0;
     row-gap: 1em;
   }
