@@ -423,7 +423,7 @@ box-shadow: 5px 5px 10px  black;}
 }
 @media only screen and (max-width: 600px){
   p, li{font-size: 16px;}
-  .sticky {width: 98%; padding: 0; margin: 0;}
+  .sticky {width: 100%; padding: 0; margin: 0;}
 
   .gridContainer{
     width: 98%;

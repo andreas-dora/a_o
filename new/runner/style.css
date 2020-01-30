@@ -15,7 +15,7 @@ ol li{margin-left:36px; line-height: 1.5em;}
 td{padding-bottom: 4px;}
 ul{padding-bottom: 10px;}
 a{text-decoration: none; color: white}
-a:hover{color: var(--hilite)}
+a:hover{color: white}
 /*------------------ Sticky HEader ---------------*/
 /* .content {padding: 16px;} */
 
@@ -344,6 +344,8 @@ th{text-transform: uppercase;font-weight: lighter;
   #id_gridHead{font-size: 50px;}
 }
 @media only screen and (max-width: 600px){
+  p, li{font-size: 16px;}
+  .sticky {width: 100%; padding: 0; margin: 0;}
   .gridContainer{
     width: 98%;
     margin: 20px auto 20px auto;
