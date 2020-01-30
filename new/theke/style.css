@@ -346,8 +346,8 @@ th{text-transform: uppercase;font-weight: lighter;
   #id_gridHead{font-size: 50px;}
 }
 @media only screen and (max-width: 600px){
-  p{font-size: 14px;}
-  .sticky {width: 98%;}
+  p, li{font-size: 16px;}
+  .sticky {width: 98%; padding: 0; margin: 0;}
 
   .gridContainer{
     width: 98%;
