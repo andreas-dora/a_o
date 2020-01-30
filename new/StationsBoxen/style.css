@@ -15,7 +15,7 @@ ol li{margin-left:36px; line-height: 1.5em;}
 td{padding-bottom: 4px;}
 ul{padding-bottom: 10px;}
 a{text-decoration: none; color: white}
-a:hover{color: var(--hilite)}
+a:hover{color: white}
 /*------------------ Sticky HEader ---------------*/
 /* .content {padding: 16px;} */
 
@@ -126,17 +126,17 @@ button:hover{
   "box13 box13 box13 box13 box13 box12 box12 box12"
   
   "box14 box14 box14 box14 box14 box14 box14 box14"
-  "box16 box16 box16 box16 box16 box15 box15 box15"
+  /* "box16 box16 box16 box16 box16 box15 box15 box15"
 
   "box17 box17 box17 box17 box17 box17 box17 box17"
   "box19 box19 box19 box19 box19 box18 box18 box18"
 
   "box20 box20 box20 box20 box20 box20 box20 box20"
-  "box22 box22 box22 box22 box22 box21 box21 box21"
+  "box22 box22 box22 box22 box22 box21 box21 box21"*/
 
   "box23 box23 box23 box23 box23 box23 box23 box23"
-  "box25 box25 box25 box25 box25 box24 box24 box24"
-  "box26 box26 box26 box26 box26 box26 box26 box26"
+  /* "box25 box25 box25 box25 box25 box24 box24 box24"
+  "box26 box26 box26 box26 box26 box26 box26 box26"  */
 }
 
 .gridContainer .grid-box{
@@ -145,7 +145,7 @@ button:hover{
   /* box-shadow: 0 0.1rem 0.3rem rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24); */
 }
 .gridContainer .chapterHead{border-top: 2px solid var(--main);}
-.gridContainer .gHeader{grid-area: box1;}
+.gridContainer .gHeader{grid-area: box1; padding: 40px 20px 0 20px;}
 .gridContainer .gNav{grid-area: box2;padding: 0 20px 0 20px ;}
 .gridContainer .gNav .flexContainer{display: flex; justify-content: space-between; background-color: var(--special);}
 .gridContainer .gNav .flexContainer div{background-color:var(--special); 
@@ -154,23 +154,24 @@ button:hover{
 }
 .gridContainer .gNav .flexContainer div:hover{background-color:var(--backG); border: 1px solid var(--special); }
 
-.gridContainer .gInhaltHead{grid-area: box3;}
-.gridContainer .gInhalt{grid-area: box5;}
+.gridContainer .gInhaltHead{grid-area: box3;
+padding: 50px 20px 0px 20px;}
+.gridContainer .gInhalt{grid-area: box5; padding:0 20px 20px 20px;}
 .gridContainer .gInhalt .flexContainer{display: flex; flex-wrap: wrap;}
 .gridContainer .gInhalt .flexContainer div{flex: 1}
 
-.gridContainer .gInhaltAside{grid-area: box6;}
-.gridContainer .gChapterOne{grid-area: box5;}
-.gridContainer .gChapterOneAside{grid-area: box6;}
-.gridContainer .gChapterTwo{grid-area: box7;}
-.gridContainer .gChapterTwoAside{grid-area: box8;}
-.gridContainer .gChapterThree{grid-area: box9;}
-.gridContainer .gChapterThreeAside{grid-area: box10;}
-.gridContainer .gChapterFourHead{grid-area: box11;}
-.gridContainer .gChapterFourAside{grid-area: box12;}
+.gridContainer .gInhaltAside{grid-area: box6;padding:0 20px 20px 20px;}
+.gridContainer .gChapterOne{grid-area: box7;}
+.gridContainer .gChapterOneAside{grid-area: box8;}
+.gridContainer .gChapterTwo{grid-area: box9;}
+.gridContainer .gChapterTwoAside{grid-area: box10;}
+.gridContainer .gChapterThree{grid-area: box11;}
+.gridContainer .gChapterThreeAside{grid-area: box12;}
+.gridContainer .gChapterFourHead{grid-area: box13;}
+.gridContainer .gChapterFourAside{grid-area: box14;}
 .gridContainer .gChapterFour{grid-area: box13;}
 .gridContainer .gChapterFiveHead{grid-area: box14;}
-.gridContainer .gChapterFiveAside{grid-area: box15;}
+/* .gridContainer .gChapterFiveAside{grid-area: box15;}
 .gridContainer .gChapterFive{grid-area: box16;}
 
 .gridContainer .gChapterSixHead{grid-area: box17;}
@@ -178,7 +179,7 @@ button:hover{
 .gridContainer .gChapterSix{grid-area: box19;}
 .gridContainer .gChapterSevenHead{grid-area: box20;}
 .gridContainer .gChapterSevenAside{grid-area: box21;}
-.gridContainer .gChapterSeven{grid-area: box22;}
+.gridContainer .gChapterSeven{grid-area: box22;} */
 /* .gridContainer .gChapterEightHead{grid-area: box23;}
 .gridContainer .gChapterEightAside{grid-area: box24;}
 .gridContainer .gChapterEight{grid-area: box25;} */
@@ -277,13 +278,14 @@ th{text-transform: uppercase;font-weight: lighter;
   }
 }
 @media only screen and (max-width: 1000px){
+  #id_gridHead{ font-size: 64px;}
   .gridContainer{
     width: 98%;
     font-size: 100%;
     grid-template-areas: 
     "box1 box1 box1 box1 box1 box1 box1 box1"
     "box2 box2 box2 box2 box2 box2 box2 box2"
-    "box3 box3 box3 box3 box3 box3 box4 box4"
+    "box3 box3 box3 box3 box3 box3 box3 box3"
     "box5 box5 box5 box5 box5 box5 box6 box6"
     "box7 box7 box7 box7 box7 box7 box8 box8"
     "box9 box9 box9 box9 box9 box9 box10 box10"
@@ -291,23 +293,23 @@ th{text-transform: uppercase;font-weight: lighter;
     "box13 box13 box13 box13 box13 box13 box12 box12"
     
     "box14 box14 box14 box14 box14 box14 box14 box14"
-    "box16 box16 box16 box16 box16 box16 box15 box15"
+    /* "box16 box16 box16 box16 box16 box16 box15 box15"
   
     "box17 box17 box17 box17 box17 box17 box17 box17"
     "box19 box19 box19 box19 box19 box19 box18 box18"
   
     "box20 box20 box20 box20 box20 box20 box20 box20"
-    "box22 box22 box22 box22 box22 box22 box21 box21"
+    "box22 box22 box22 box22 box22 box22 box21 box21"*/
   
     "box23 box23 box23 box23 box23 box23 box23 box23"
-    "box25 box25 box25 box25 box25 box25 box24 box24"
-    "box26 box26 box26 box26 box26 box26 box26 box26"
+    /* "box25 box25 box25 box25 box25 box25 box24 box24"  */
+    /* "box26 box26 box26 box26 box26 box26 box26 box26" */
   }
 } 
 
 
 @media only screen and (max-width: 900px){
-  #id_gridHead{font-size: 66px;}
+  #id_gridHead{font-size: 50px;}
   .sticky {width: 98%;}
   .gridContainer{
     width: 96%;
@@ -350,7 +352,7 @@ th{text-transform: uppercase;font-weight: lighter;
 .fourGrid .head{border: 1px solid white;text-align: center;}
 }
 @media only screen and (max-width: 700px){
-  #id_gridHead{font-size: 50px;}
+  #id_gridHead{font-size: 40px;}
 }
 @media only screen and (max-width: 600px){
   .gridContainer{
@@ -363,9 +365,11 @@ th{text-transform: uppercase;font-weight: lighter;
   }
   .gridContainer .grid-box{padding: 10px 2px;}
   .navi a{ margin-bottom: 18px;}
-  #id_gridHead{font-size: 42px;}
+  #id_gridHead{font-size: 32px;}
   .fourGrid{
     width: 98%;}
-  .fourGrid .item{padding: 8px 3px; font-size: 16px;}
+  .fourGrid .item{padding: 8px 3px; }
+  p, li{font-size: 17px;}
+
 }
 
