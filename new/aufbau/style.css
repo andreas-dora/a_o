@@ -231,6 +231,8 @@ th{text-transform: uppercase;font-weight: lighter;
   cursor: pointer;
   padding: 14px 16px;
   transition: 0.3s;
+  font-size: 16px;
+  overflow: hidden;
 }
 .tab button:hover {
   background-color: var(--backG);
