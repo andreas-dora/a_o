@@ -1,0 +1,43 @@
+*{margin: 0; padding: 0; box-sizing: border-box;}
+:root{--main: rgb(250,100,30); --backG: rgb(10,10,15); --special:#77212e; --hilite: rgb(250,140,30);}/* #50161f #641b26 */
+html {scroll-behavior: smooth;}
+body{font-family: 'Roboto Mono', monospace;
+
+  background-color: var(--backG); color : var(--main);  font-size: 125%;}
+
+/*--------------- TAGS Typo ------------------*/
+h1, h2{margin-bottom: 20px;}
+h5{margin-bottom: 16px; text-transform: uppercase; letter-spacing: 0.2em;}
+#id_gridHead{font-family: 'Roboto', sans-serif; font-size: 72px;}
+h3{margin-bottom: 18px;}
+p{line-height: 1.5em;
+  margin-bottom: 6px;}
+strong{color: var(--hilite);}
+ul li{margin-left: 28px; line-height: 1.5em;}
+ol li{margin-left:36px; line-height: 1.5em;}
+td{padding-bottom: 4px;}
+ul{padding-bottom: 10px;}
+a{text-decoration: none; color: var(--main)}
+a:hover{color: white;}
+
+
+button{width: 140px; height: 46px; background-color: var(--backG); color: var(--main); font-family: 'Roboto Mono', monospace; font-size: 20px; letter-spacing: 0.2em;  outline: none; border: 1px solid var(--main);}
+button:hover{ border-color: var(--hilite); color: var(--hilite);
+
+}
+.container { 
+  max-width: 600px;
+  margin: 0 auto;
+  height: 80vh;
+  position: relative;
+  /* border: 3px solid green;  */
+}
+
+.vertical-center {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+#robo{text-transform: uppercase; font-size: 28px;}
