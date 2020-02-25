@@ -1,12 +1,12 @@
 *{margin: 0; padding: 0; box-sizing: border-box;}
 :root{--main: ghostwhite; --backG:#50161f; --special:#77212e; --hilite: #9be4e4;}/* #50161f #641b26 */
 html {scroll-behavior: smooth;}
-body{font-family: Arial, Helvetica, sans-serif;background-color: var(--backG); color : var(--main);  font-size: 125%;}
+body{font-family: Arial, Helvetica, sans-serif;background-color: var(--backG); color : var(--main);  font-size: 110%;}
 /*--------------- TAGS Typo ------------------*/
 h1, h2{margin-bottom: 20px;}
 h5{margin-bottom: 16px; text-transform: uppercase; letter-spacing: 0.2em;}
 #id_gridHead{font-family: 'Roboto', sans-serif; font-size: 72px;}
-h3{margin-bottom: 18px;}
+h3{margin-bottom: 30px;}
 p{line-height: 1.5em;
   margin-bottom: 6px;}
 strong{color: var(--hilite);}
@@ -16,6 +16,7 @@ td{padding-bottom: 4px;}
 ul{padding-bottom: 10px;}
 a{text-decoration: none; color: white}
 a:hover{color: white;}
+hr{margin: 30px 0 50px 0; color: var(--special);}
 /*------------------ Sticky HEader ---------------*/
 /* .content {padding: 16px;} */
 
