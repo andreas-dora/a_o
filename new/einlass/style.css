@@ -10,6 +10,7 @@ h4, h5{margin-bottom: 20px; text-transform: uppercase; letter-spacing: 0.2em;}
 h3{margin-bottom: 30px;}
 p{line-height: 1.5em;
   margin-bottom: 6px;}
+.right{float: right;}  
 /* strong{color: var(--hilite);} */
 .neu{color: gold;}
 ul li{margin-left: 28px; line-height: 1.5em;}

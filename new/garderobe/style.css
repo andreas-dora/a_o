@@ -1,5 +1,5 @@
 *{margin: 0; padding: 0; box-sizing: border-box;}
-:root{--main: ghostwhite; --backG:#50161f; --special:#77212e; --hilite: gold;}/* #50161f #641b26 */
+:root{--main: ghostwhite; --backG:#50161f; --special:#77212e; --neu: gold;}/* #50161f #641b26 */
 html {scroll-behavior: smooth;}
 body{font-family: Arial, Helvetica, sans-serif;background-color: var(--backG); color : var(--main);  font-size: 125%;}
 /*--------------- TAGS Typo ------------------*/
@@ -16,6 +16,7 @@ td{padding-bottom: 4px;}
 ul{padding-bottom: 10px;}
 a{text-decoration: none; color: white}
 a:hover{color: white;}
+.neu{color: var(--neu)}
 /*------------------ Sticky HEader ---------------*/
 /* .content {padding: 16px;} */
 
