@@ -1,6 +1,10 @@
-*{margin: 0; padding: 0; box-sizing: border-box;}
+*{margin: 0; padding: 0; box-sizing: border-box;
+  outline: 1px solid lightgoldenrodyellow;
+}
 :root{--main: ghostwhite; --backG:#50161f; --special:#77212e; --hilite: #9be4e4;
---wichtig:#280b10;}/* #50161f #641b26 */
+--wichtig:#280b10;
+
+}/* #50161f #641b26 */
 /* html {scroll-behavior: smooth;} */
 body{font-family: Arial, Helvetica, sans-serif;background-color: var(--backG); color : var(--main);  font-size: 110%;}
 /*--------------- TAGS Typo ------------------*/
