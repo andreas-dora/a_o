@@ -1,5 +1,5 @@
 *{margin: 0; padding: 0; box-sizing: border-box;
-  outline: 1px solid lightgoldenrodyellow;
+  /* outline: 1px solid lightgoldenrodyellow; */
 }
 :root{--main: ghostwhite; --backG:#50161f; --special:#77212e; --hilite: #9be4e4;
 --wichtig:#280b10;
