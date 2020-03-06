@@ -16,6 +16,12 @@ td{padding-bottom: 4px;}
 ul{padding-bottom: 10px;}
 a{text-decoration: none; color: white}
 a:hover{color: white}
+.neu{
+  color: #ffd700;
+}
+.right{
+  float: right;
+}
 /*------------------ Sticky HEader ---------------*/
 /* .content {padding: 16px;} */
 
